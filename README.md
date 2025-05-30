@@ -11,13 +11,11 @@ This model can not be used with NEURON v5.1 as errors in the extracellular mecha
 Please contact mcintyre@bme.jhu.edu if you have any questions about the model.
 
 ---
-
+## Changelog
 20110523 rare condition bug fix supplied by Ted Carnevale where vtrap2, 7, and 8 assignments in AXNODE.mod were fixed to prevent discontinuity.
 
 20141009 Nikki Pelot tidied up the code by changing e_pas = v_init to e_pas = -80 in three lines (number 93, 106, 119) in MRGaxon.hoc.
 
 20180920 NTC fixed stimulus parameter panel, which previously affected only stimulus amplitude.
 
----
-
-2025-05-27 – Standardized to Markdown.
+20250527 Standardized to Markdown.

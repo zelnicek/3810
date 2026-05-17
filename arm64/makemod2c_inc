@@ -1,0 +1,8 @@
+AXNODE.cpp: ../AXNODE.mod $(NOCMODL)
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "..";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "AXNODE.mod"  -o "/Users/stepanzelnicek/Desktop/CEITEC/bifurcation_am_project_simulation/3810/arm64" )
+
+./AXNODE.o: AXNODE.cpp
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) /Users/stepanzelnicek/Desktop/CEITEC/bifurcation_am_project_simulation/3810/arm64/$<\\n"
+	$(CXXCOMPILE) -I".." $(INCLUDES) -fPIC -c "/Users/stepanzelnicek/Desktop/CEITEC/bifurcation_am_project_simulation/3810/arm64/$<" -o $@
+

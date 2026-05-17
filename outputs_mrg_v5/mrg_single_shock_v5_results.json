@@ -1,0 +1,1564 @@
+{
+  "metadata": {
+    "paradigm": "single-shock biphasic, MRG axon, point electrode",
+    "script_version": "v5 (reviewer-proof)",
+    "review_q_addressed": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q4",
+      "Q5"
+    ],
+    "fiber_D_um": 10.0,
+    "n_nodes": 21,
+    "internode_um": 1150.0,
+    "electrode_radial_um": 2000.0,
+    "rho_e_ohm_cm": 300.0,
+    "temperature_C": 37.0,
+    "propagation_nodes": 3,
+    "expected_delay_us": 57.5,
+    "prop_window_us": [
+      17.25,
+      172.50000000000003
+    ],
+    "ap_threshold_mV": -20.0,
+    "dt_ms": 0.005,
+    "t_total_ms": 15.0,
+    "beta_max_wb": 5.0,
+    "pulse_widths_us": [
+      25,
+      50,
+      100,
+      200,
+      300,
+      500,
+      750,
+      1000
+    ],
+    "fit_method": "Weiss-Lapicque + multi-start + bootstrap",
+    "n_boot": 500,
+    "multistart_n": 10,
+    "hoc_sha256_16": "73da0790cdbbb1a7",
+    "neuron_version": "9.0.1",
+    "python_version": "3.13.5",
+    "numpy_version": "2.4.2",
+    "hostname": "Stepans-MacBook-Air.local",
+    "git_commit": "b15daeda6ea3",
+    "random_seed": 42
+  },
+  "intracellular_control": {
+    "rheobase_nA": 0.28032787360411937,
+    "chronaxie_us": 232.3948005933106,
+    "r2": 0.995089263142524,
+    "thresholds_by_pw_nA": {
+      "25": 2.817334663391113,
+      "50": 1.6882068557739256,
+      "100": 1.009204322814941,
+      "200": 0.6231646804809571,
+      "300": 0.4866012496948241,
+      "500": 0.3767401657104491,
+      "750": 0.32486132049560534,
+      "1000": 0.3019735946655273
+    },
+    "note": "Intracellular IClamp control. The chronaxie produced here is the literature-consistent membrane time constant. The much larger chronaxie observed for extracellular stimulation is a geometry/Rattay-filter effect, not a model defect."
+  },
+  "shapes": {
+    "sine": {
+      "label": "Sine",
+      "rheobase_uA": 314.3320231739479,
+      "chronaxie_us": 236.76762404800974,
+      "r2": 0.999277594194139,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 33.333333333333336,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3279.7247931213383,
+          "charge_nC": 50.469775011275146,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 1837.4641951599122,
+          "charge_nC": 58.00646172676031,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1035.4623222351074,
+          "charge_nC": 65.78398131457094,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "rect": {
+      "label": "Square",
+      "rheobase_uA": 250.55029221006427,
+      "chronaxie_us": 211.3442052351216,
+      "r2": 0.9986690668881351,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 31.666666666666668,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 2357.483674407959,
+          "charge_nC": 58.937091860198976,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 1343.0794789733886,
+          "charge_nC": 67.15397394866943,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 757.7523890686033,
+          "charge_nC": 75.77523890686034,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "tri_sym": {
+      "label": "Triangle\n(symmetric, 0.50)",
+      "rheobase_uA": 262.02881986247354,
+      "chronaxie_us": 371.0449679744886,
+      "r2": 0.9992658185419674,
+      "rb_ci95": [
+        217.97216058526877,
+        336.60985387898154
+      ],
+      "tc_ci95": [
+        281.7761340147545,
+        468.1916974933803
+      ],
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 33.75,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4124.451271148681,
+          "charge_nC": 49.49341525378414,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2242.737592132568,
+          "charge_nC": 56.06843980331412,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1272.8890563049317,
+          "charge_nC": 63.644452815246595,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": 310.97508999633783,
+          "charge_nC": 155.48754499816891,
+          "delay_us": 30.0
+        }
+      }
+    },
+    "saw_up": {
+      "label": "Sawtooth\n(up, 0% dwell)",
+      "rheobase_uA": 205.23394438729147,
+      "chronaxie_us": 580.3756681222663,
+      "r2": 0.9999591936680617,
+      "rb_ci95": [
+        194.46131191878956,
+        216.07993965215195
+      ],
+      "tc_ci95": [
+        543.4293186679367,
+        614.3599115572902
+      ],
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 22.500000000000004,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4980.774427703856,
+          "charge_nC": 49.80774427703883,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2568.0549424133296,
+          "charge_nC": 57.78123620430005,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1389.466193084717,
+          "charge_nC": 65.9996441715241,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": 442.8110143127442,
+          "charge_nC": 109.59572604240425,
+          "delay_us": 20.0
+        },
+        "750": {
+          "threshold_uA": 369.56883413696283,
+          "charge_nC": 137.66439071601866,
+          "delay_us": -10.0
+        },
+        "1000": {
+          "threshold_uA": 334.7787985534668,
+          "charge_nC": 166.55245228034977,
+          "delay_us": 25.0
+        }
+      }
+    },
+    "saw_down": {
+      "label": "Sawtooth\n(down, 0% dwell)",
+      "rheobase_uA": 572.2055326233092,
+      "chronaxie_us": 133.05881506406038,
+      "r2": 0.9959872000040129,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 30.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3589.783355865479,
+          "charge_nC": 53.846750337981995,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 2178.6506844787596,
+          "charge_nC": 59.91289382316578,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1277.7718683166504,
+          "charge_nC": 67.0830230866241,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "tri_20": {
+      "label": "Triangle\n(asym 0.20)",
+      "rheobase_uA": 433.0453874426988,
+      "chronaxie_us": 206.26148038894604,
+      "r2": 0.9987647013408137,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 35.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3987.7325348205563,
+          "charge_nC": 49.84665668525616,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2273.865518707275,
+          "charge_nC": 56.84663796768158,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1289.9788983459473,
+          "charge_nC": 64.49894491729742,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "tri_35": {
+      "label": "Triangle\n(asym 0.35)",
+      "rheobase_uA": 370.7895353960677,
+      "chronaxie_us": 251.898204990955,
+      "r2": 0.9993143345396024,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 33.333333333333336,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4092.712993072508,
+          "charge_nC": 49.47235486131532,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2281.189736724854,
+          "charge_nC": 56.4030429409992,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1276.5511653137207,
+          "charge_nC": 63.82755826568609,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "tri_50": {
+      "label": "Triangle\n(asym 0.50)",
+      "rheobase_uA": 262.02881986247354,
+      "chronaxie_us": 371.0449679744886,
+      "r2": 0.9992658185419674,
+      "rb_ci95": [
+        217.97216058526877,
+        336.60985387898154
+      ],
+      "tc_ci95": [
+        281.7761340147545,
+        468.1916974933803
+      ],
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 33.75,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4124.451271148681,
+          "charge_nC": 49.49341525378414,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2242.737592132568,
+          "charge_nC": 56.06843980331412,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1272.8890563049317,
+          "charge_nC": 63.644452815246595,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": 310.97508999633783,
+          "charge_nC": 155.48754499816891,
+          "delay_us": 30.0
+        }
+      }
+    },
+    "tri_65": {
+      "label": "Triangle\n(asym 0.65)",
+      "rheobase_uA": 256.6262781369117,
+      "chronaxie_us": 378.4965932229636,
+      "r2": 0.9984284996994749,
+      "rb_ci95": [
+        203.70331928685488,
+        361.07275172741043
+      ],
+      "tc_ci95": [
+        258.80243096858345,
+        527.229696737654
+      ],
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 22.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4089.6612355651846,
+          "charge_nC": 49.43546548485415,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2283.6311427307132,
+          "charge_nC": 56.463407375210025,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1277.7718683166504,
+          "charge_nC": 63.888593415832545,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": 345.765125579834,
+          "charge_nC": 129.65558939783006,
+          "delay_us": -5.0
+        },
+        "1000": {
+          "threshold_uA": 312.1957929992676,
+          "charge_nC": 156.0978964996338,
+          "delay_us": 20.0
+        }
+      }
+    },
+    "tri_72": {
+      "label": "Triangle\n(asym 0.72)",
+      "rheobase_uA": 246.62752323640788,
+      "chronaxie_us": 402.83669073582263,
+      "r2": 0.9992318459084816,
+      "rb_ci95": [
+        204.76568658515998,
+        331.2917935394553
+      ],
+      "tc_ci95": [
+        291.14747125155117,
+        529.0257929126564
+      ],
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 32.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4185.486421295165,
+          "charge_nC": 49.827219301133155,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2283.6311427307132,
+          "charge_nC": 56.63767715105955,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1288.1478438415527,
+          "charge_nC": 64.21570352483928,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": 347.59618008422854,
+          "charge_nC": 130.3485675315857,
+          "delay_us": 25.0
+        },
+        "1000": {
+          "threshold_uA": 314.637199005127,
+          "charge_nC": 157.31859950256347,
+          "delay_us": 30.0
+        }
+      }
+    },
+    "tri_80": {
+      "label": "Triangle\n(asym 0.80)",
+      "rheobase_uA": 279.83268024290976,
+      "chronaxie_us": 337.24449688460055,
+      "r2": 0.9969941475197889,
+      "rb_ci95": [
+        207.99269783950766,
+        421.89281397306667
+      ],
+      "tc_ci95": [
+        211.8362051350121,
+        521.3310118056327
+      ],
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 27.000000000000004,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3984.6807773132314,
+          "charge_nC": 49.80850971641558,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2279.358682220459,
+          "charge_nC": 56.98396705551168,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1292.4203043518066,
+          "charge_nC": 64.62101521759035,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": 351.2582890930176,
+          "charge_nC": 131.7218584098816,
+          "delay_us": 20.0
+        },
+        "1000": {
+          "threshold_uA": 317.6889565124512,
+          "charge_nC": 158.8444782562256,
+          "delay_us": 15.0
+        }
+      }
+    },
+    "gaussian": {
+      "label": "Gaussian\nBiphasic",
+      "rheobase_uA": 462.3422605879877,
+      "chronaxie_us": 181.10286230577037,
+      "r2": 0.9992685710540798,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 31.666666666666668,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3798.523569366455,
+          "charge_nC": 48.664007859742796,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 2176.2092784728998,
+          "charge_nC": 55.08267608797862,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1273.4994078063967,
+          "charge_nC": 64.0384944612402,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "raised_cos": {
+      "label": "Raised\nCosine",
+      "rheobase_uA": 174.97735836453418,
+      "chronaxie_us": 653.2414773438146,
+      "r2": 0.9998388053504642,
+      "rb_ci95": [
+        147.20388655366685,
+        193.25268690248475
+      ],
+      "tc_ci95": [
+        577.3975034834106,
+        783.635786272957
+      ],
+      "beta": 0.9999999999999998,
+      "well_behaved": true,
+      "mean_delay_us": 28.000000000000004,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4767.151402191163,
+          "charge_nC": 47.67151402191205,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2422.791285064697,
+          "charge_nC": 54.51280391395587,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1311.341200897217,
+          "charge_nC": 62.288707042617844,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": 337.830556060791,
+          "charge_nC": 125.84188213264466,
+          "delay_us": 25.0
+        },
+        "1000": {
+          "threshold_uA": 303.6508719787597,
+          "charge_nC": 151.06630880943297,
+          "delay_us": 10.0
+        }
+      }
+    },
+    "exponential": {
+      "label": "Exponential\nBiphasic",
+      "rheobase_uA": 815.0988915752299,
+      "chronaxie_us": 126.11076677713586,
+      "r2": 0.9867737745573654,
+      "rb_ci95": [
+        521.4446320721956,
+        1094.3773067854722
+      ],
+      "tc_ci95": [
+        86.79231783002119,
+        250.09706274235648
+      ],
+      "beta": 1.0000000000000002,
+      "well_behaved": true,
+      "mean_delay_us": 27.5,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4818.420928314209,
+          "charge_nC": 49.512848856646755,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 3106.9953182067866,
+          "charge_nC": 54.80314818006657,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1893.6165332946778,
+          "charge_nC": 61.673977640297934,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": 1150.8187560119627,
+          "charge_nC": 71.96612661121345,
+          "delay_us": 15.0
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "half_wave": {
+      "label": "Half-wave\nRectified Sine",
+      "rheobase_uA": 314.3320231739479,
+      "chronaxie_us": 236.76762404800974,
+      "r2": 0.999277594194139,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 33.333333333333336,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3279.7247931213383,
+          "charge_nC": 50.469775011275146,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 1837.4641951599122,
+          "charge_nC": 58.00646172676031,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1035.4623222351074,
+          "charge_nC": 65.78398131457094,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "sinc": {
+      "label": "Sinc\nPulse",
+      "rheobase_uA": 397.8750518122453,
+      "chronaxie_us": 252.71271508699726,
+      "r2": 0.976356494312342,
+      "rb_ci95": [
+        202.36740517957884,
+        602.2114635039294
+      ],
+      "tc_ci95": [
+        151.96126561485704,
+        665.427219921739
+      ],
+      "beta": 1.0000000000000002,
+      "well_behaved": false,
+      "mean_delay_us": 29.166666666666664,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4195.2520453186025,
+          "charge_nC": 45.53569347400439,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2804.2609734802245,
+          "charge_nC": 49.32214811627957,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1548.7679349670411,
+          "charge_nC": 56.38407619458864,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": 896.9125314025879,
+          "charge_nC": 65.21273917349365,
+          "delay_us": 20.0
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": 382.9965671691895,
+          "charge_nC": 104.51495357101244,
+          "delay_us": 20.0
+        },
+        "1000": {
+          "threshold_uA": 334.7787985534668,
+          "charge_nC": 121.80745699420214,
+          "delay_us": 30.0
+        }
+      }
+    },
+    "staircase_4": {
+      "label": "Staircase\n(4-step)",
+      "rheobase_uA": 192.87207446289048,
+      "chronaxie_us": 406.8921037230447,
+      "r2": 0.9998732801421173,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": false,
+      "mean_delay_us": 31.666666666666668,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3337.0978342590333,
+          "charge_nC": 58.39921209953308,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 1747.1321729431154,
+          "charge_nC": 65.51745648536682,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 987.8549051208496,
+          "charge_nC": 74.08911788406374,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "trapezoid_flat35": {
+      "label": "Trapezoidal\n(flat 35%)",
+      "rheobase_uA": 230.40869285461324,
+      "chronaxie_us": 396.5545683257263,
+      "r2": 0.9999143316462914,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 0.9999999999999997,
+      "well_behaved": true,
+      "mean_delay_us": 30.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3890.0762945861807,
+          "charge_nC": 45.38422343683813,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 2043.1526511535649,
+          "charge_nC": 51.07881627883864,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1153.8705135192872,
+          "charge_nC": 57.693525675964345,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "chirp": {
+      "label": "Linear\nChirp",
+      "rheobase_uA": 548.7069998168938,
+      "chronaxie_us": 156.0540616950579,
+      "r2": 0.9978935375578294,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": false,
+      "mean_delay_us": 31.666666666666668,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3951.111444732666,
+          "charge_nC": 52.784214201468586,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 2329.4075053405754,
+          "charge_nC": 62.21672028069303,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1359.5589695129393,
+          "charge_nC": 72.62442192541421,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "prbs": {
+      "label": "PRBS\nBiphasic",
+      "rheobase_uA": 671.3876516113282,
+      "chronaxie_us": 137.96732697144958,
+      "r2": 0.9932798344811024,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": false,
+      "mean_delay_us": 35.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4332.581133148194,
+          "charge_nC": 64.98871699722292,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2655.9455586242675,
+          "charge_nC": 66.3986389656067,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1509.705438873291,
+          "charge_nC": 75.48527194366457,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "biomimetic_ap": {
+      "label": "Biomimetic\nAP-shape",
+      "rheobase_uA": 1039.561969826404,
+      "chronaxie_us": 80.43618601140265,
+      "r2": 0.7577967197265992,
+      "rb_ci95": [
+        391.38792602311776,
+        1630.586957226039
+      ],
+      "tc_ci95": [
+        39.820932789455924,
+        455.35592263709526
+      ],
+      "beta": 1.0,
+      "well_behaved": false,
+      "mean_delay_us": 25.833333333333332,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3752.136855255127,
+          "charge_nC": 63.25820310620305,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 3975.525504791259,
+          "charge_nC": 64.92807715506041,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 2146.302054901122,
+          "charge_nC": 75.09516079719431,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": 1298.5238193664552,
+          "charge_nC": 90.82235312687672,
+          "delay_us": 15.0
+        },
+        "300": {
+          "threshold_uA": 1011.0482621765135,
+          "charge_nC": 106.04360883569782,
+          "delay_us": 20.0
+        },
+        "500": {
+          "threshold_uA": 771.1801221008299,
+          "charge_nC": 134.77168406452753,
+          "delay_us": 20.0
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "cathodic_first": {
+      "label": "Cathodic-First\nInterleaved",
+      "rheobase_uA": 655.5185079602301,
+      "chronaxie_us": 114.25228752130168,
+      "r2": 0.98620603325504,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": false,
+      "mean_delay_us": 33.333333333333336,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3600.1593313903804,
+          "charge_nC": 54.00238997085572,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2306.8244997863776,
+          "charge_nC": 61.5153199943034,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1302.1859283752442,
+          "charge_nC": 69.449916180013,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "anodic_first": {
+      "label": "Anodic-First\nInterleaved",
+      "rheobase_uA": null,
+      "chronaxie_us": null,
+      "r2": null,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": Infinity,
+      "well_behaved": false,
+      "mean_delay_us": null,
+      "by_pw": {
+        "25": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "50": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "100": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "double_pulse": {
+      "label": "Double\nPulse",
+      "rheobase_uA": 865.6084052580221,
+      "chronaxie_us": 140.72468974582867,
+      "r2": 0.7403280888189256,
+      "rb_ci95": [
+        0.0246042558744351,
+        1645.9220196930744
+      ],
+      "tc_ci95": [
+        63.276765213015814,
+        9999999.454268789
+      ],
+      "beta": 0.9833333333333333,
+      "well_behaved": false,
+      "mean_delay_us": 28.333333333333332,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 4817.810576812743,
+          "charge_nC": 48.17810576812743,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 5379.333958160398,
+          "charge_nC": 53.79333958160398,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1925.3548113708493,
+          "charge_nC": 57.76064434112549,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": 1255.7992142639164,
+          "charge_nC": 69.0689567845154,
+          "delay_us": 20.0
+        },
+        "300": {
+          "threshold_uA": 896.9125314025879,
+          "charge_nC": 80.72212782623289,
+          "delay_us": 20.0
+        },
+        "500": {
+          "threshold_uA": 704.0414569396971,
+          "charge_nC": 98.5658039715576,
+          "delay_us": 25.0
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "composite_harm": {
+      "label": "Composite\nHarmonics",
+      "rheobase_uA": 642.3959580092776,
+      "chronaxie_us": 107.63471473520535,
+      "r2": 0.9791560643808477,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 0.9999999999999998,
+      "well_behaved": false,
+      "mean_delay_us": 30.0,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3349.915215789795,
+          "charge_nC": 50.68736792432492,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 2200.0129870300293,
+          "charge_nC": 57.21204049039759,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1217.347069671631,
+          "charge_nC": 66.77456863617624,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "soft_clip": {
+      "label": "Soft-Clipped\nSine",
+      "rheobase_uA": 352.1738168096179,
+      "chronaxie_us": 239.84829110970927,
+      "r2": 0.9995883664734354,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 0.9999999999999998,
+      "well_behaved": true,
+      "mean_delay_us": 31.666666666666668,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3721.00892868042,
+          "charge_nC": 46.512611608504926,
+          "delay_us": 30.0
+        },
+        "50": {
+          "threshold_uA": 2071.2288202209475,
+          "charge_nC": 51.78072050552371,
+          "delay_us": 30.0
+        },
+        "100": {
+          "threshold_uA": 1177.0638705749511,
+          "charge_nC": 58.85319352874764,
+          "delay_us": 35.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    },
+    "erf_sigmoid": {
+      "label": "ERF Sigmoid\nBiphasic",
+      "rheobase_uA": 496.8271212726636,
+      "chronaxie_us": 154.3082190729762,
+      "r2": 0.994926548160913,
+      "rb_ci95": null,
+      "tc_ci95": null,
+      "beta": 1.0,
+      "well_behaved": true,
+      "mean_delay_us": 33.333333333333336,
+      "by_pw": {
+        "25": {
+          "threshold_uA": 3531.7999632263186,
+          "charge_nC": 48.10999957595174,
+          "delay_us": 35.0
+        },
+        "50": {
+          "threshold_uA": 2124.9397523498537,
+          "charge_nC": 53.847429535012076,
+          "delay_us": 35.0
+        },
+        "100": {
+          "threshold_uA": 1200.2572276306153,
+          "charge_nC": 60.88406974794378,
+          "delay_us": 30.0
+        },
+        "200": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "300": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "500": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "750": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        },
+        "1000": {
+          "threshold_uA": null,
+          "charge_nC": null,
+          "delay_us": null
+        }
+      }
+    }
+  }
+}

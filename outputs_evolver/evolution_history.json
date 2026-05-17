@@ -1,0 +1,278 @@
+{
+  "config": {
+    "pool": 50,
+    "gens": 40,
+    "pw": 200,
+    "seed": 42,
+    "quick": false,
+    "hoc": "MRGaxon.hoc"
+  },
+  "history": [
+    {
+      "gen": 0,
+      "best_score_nC": 66.83451658317009,
+      "mean_score_nC": 74.20492252819487,
+      "worst_score_nC": 80.28443158379378,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 26,
+      "best_gap_us": 393.4621887510692,
+      "gen_time_sec": 366.4578449726105
+    },
+    {
+      "gen": 1,
+      "best_score_nC": 66.77390465071088,
+      "mean_score_nC": 70.85198503968428,
+      "worst_score_nC": 79.98499164628272,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 35,
+      "best_gap_us": 292.0489844563678,
+      "gen_time_sec": 292.4831371307373
+    },
+    {
+      "gen": 2,
+      "best_score_nC": 64.39005791273838,
+      "mean_score_nC": 68.81199278136347,
+      "worst_score_nC": 77.61799488721421,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 42,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 291.57412219047546
+    },
+    {
+      "gen": 3,
+      "best_score_nC": 62.35006161039704,
+      "mean_score_nC": 67.72411159330088,
+      "worst_score_nC": 75.02882915164602,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 48,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 291.89561200141907
+    },
+    {
+      "gen": 4,
+      "best_score_nC": 62.35006161039704,
+      "mean_score_nC": 66.6946377378235,
+      "worst_score_nC": 72.57913674123928,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 49,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 291.8014450073242
+    },
+    {
+      "gen": 5,
+      "best_score_nC": 62.31550961647822,
+      "mean_score_nC": 65.59913088294174,
+      "worst_score_nC": 72.1340321235566,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 47,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 293.3208661079407
+    },
+    {
+      "gen": 6,
+      "best_score_nC": 60.71645352743895,
+      "mean_score_nC": 64.40765326180491,
+      "worst_score_nC": 68.55560728199757,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 48,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 291.89446926116943
+    },
+    {
+      "gen": 7,
+      "best_score_nC": 60.257618464879634,
+      "mean_score_nC": 63.81662101388777,
+      "worst_score_nC": 79.43408401104634,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 49,
+      "best_gap_us": 372.56195515818945,
+      "gen_time_sec": 294.11121797561646
+    },
+    {
+      "gen": 8,
+      "best_score_nC": 60.11743474366371,
+      "mean_score_nC": 62.34611358432485,
+      "worst_score_nC": 70.25100018861215,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 50,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 295.2688810825348
+    },
+    {
+      "gen": 9,
+      "best_score_nC": 59.27876244829517,
+      "mean_score_nC": 61.61105350716343,
+      "worst_score_nC": 68.33933946425914,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 48,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 293.32194900512695
+    },
+    {
+      "gen": 10,
+      "best_score_nC": 59.15012231304667,
+      "mean_score_nC": 61.80909607212905,
+      "worst_score_nC": 80.66882374756517,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 46,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 292.2257549762726
+    },
+    {
+      "gen": 11,
+      "best_score_nC": 57.75292538768074,
+      "mean_score_nC": 61.177889093087494,
+      "worst_score_nC": 75.25467298415376,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 49,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 292.48999071121216
+    },
+    {
+      "gen": 12,
+      "best_score_nC": 56.15968194728849,
+      "mean_score_nC": 60.95036148852299,
+      "worst_score_nC": 72.86828425535957,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 47,
+      "best_gap_us": 382.9334446590445,
+      "gen_time_sec": 291.30378437042236
+    },
+    {
+      "gen": 13,
+      "best_score_nC": 56.15968194728849,
+      "mean_score_nC": 61.09972350942396,
+      "worst_score_nC": 74.32937739234865,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 47,
+      "best_gap_us": 382.9334446590445,
+      "gen_time_sec": 294.00095891952515
+    },
+    {
+      "gen": 14,
+      "best_score_nC": 56.15968194728849,
+      "mean_score_nC": 60.90458786020087,
+      "worst_score_nC": 81.22733892243183,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 48,
+      "best_gap_us": 382.9334446590445,
+      "gen_time_sec": 292.5680088996887
+    },
+    {
+      "gen": 15,
+      "best_score_nC": 56.15968194728849,
+      "mean_score_nC": 60.291582739601814,
+      "worst_score_nC": 78.20488434885819,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 47,
+      "best_gap_us": 382.9334446590445,
+      "gen_time_sec": 294.5638179779053
+    },
+    {
+      "gen": 16,
+      "best_score_nC": 55.55221761858655,
+      "mean_score_nC": 59.6141829317829,
+      "worst_score_nC": 67.95447343803745,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 47,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 311.50232696533203
+    },
+    {
+      "gen": 17,
+      "best_score_nC": 54.80696941240455,
+      "mean_score_nC": 59.4138233350356,
+      "worst_score_nC": 74.68039347055168,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 46,
+      "best_gap_us": 305.49377351831413,
+      "gen_time_sec": 308.3117768764496
+    },
+    {
+      "gen": 18,
+      "best_score_nC": 54.68147595324474,
+      "mean_score_nC": 59.08159227120701,
+      "worst_score_nC": 72.24152056014267,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 48,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 305.8316910266876
+    },
+    {
+      "gen": 19,
+      "best_score_nC": 54.63090141183165,
+      "mean_score_nC": 57.00158736802635,
+      "worst_score_nC": 65.94969864295054,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 50,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 293.7094259262085
+    },
+    {
+      "gen": 20,
+      "best_score_nC": 53.32231375864404,
+      "mean_score_nC": 57.5446510605916,
+      "worst_score_nC": 76.06757702610383,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 48,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 296.8563561439514
+    },
+    {
+      "gen": 21,
+      "best_score_nC": 53.32231375864404,
+      "mean_score_nC": 58.034052031214884,
+      "worst_score_nC": 83.80782906956968,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 46,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 293.9275667667389
+    },
+    {
+      "gen": 22,
+      "best_score_nC": 53.32231375864404,
+      "mean_score_nC": 57.54206669937691,
+      "worst_score_nC": 72.06405086752807,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 49,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 293.6694669723511
+    },
+    {
+      "gen": 23,
+      "best_score_nC": 53.32231375864404,
+      "mean_score_nC": 58.50474231047741,
+      "worst_score_nC": 85.67340413947701,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 46,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 293.8359889984131
+    },
+    {
+      "gen": 24,
+      "best_score_nC": 53.32231375864404,
+      "mean_score_nC": 58.90301642293835,
+      "worst_score_nC": 82.4013863057582,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 45,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 294.32464718818665
+    },
+    {
+      "gen": 25,
+      "best_score_nC": 53.32231375864404,
+      "mean_score_nC": 59.15026623405892,
+      "worst_score_nC": 74.5621765545882,
+      "n_valid_in_pool": 50,
+      "n_well_behaved_in_pool": 43,
+      "best_gap_us": 628.2439431661141,
+      "gen_time_sec": 294.3367681503296
+    }
+  ],
+  "best_ever_score_nC": 53.32231375864404,
+  "best_ever_gen": 20,
+  "total_runtime_sec": 7745.612871170044,
+  "hoc_sha256_16": "73da0790cdbbb1a7",
+  "numpy_version": "2.4.2",
+  "python_version": "3.13.5"
+}
